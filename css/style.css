@@ -41,6 +41,7 @@ h1 {
 h2 {
   font-size: 2em;
 }
+
 a {
   color: #fca311;
 }
@@ -48,40 +49,49 @@ a {
 a:hover {
   text-decoration: none;
 }
-
+.courses h2,
+.education h2,
+footer h2 {
+  margin-top: 0;
+}
 /* profile
 ------------------------ */
 header {
   background-color: #14213d;
   color: #e5e5e5;
   margin: 0;
+  padding: 2rem 1rem;
 }
-
+header div {
+  padding: 0.9rem 1rem;
+}
 header h1,
 header h2 {
-  line-height: 1.2;
   font-weight: 400;
+  margin-bottom: 2rem;
 }
-h1 {
-  font-size: 4.5em;
+header h1 {
+  font-size: 3rem;
   margin: 0;
+  line-height: 0.7;
 }
-h2 {
-  font-size: 2.5em;
-  margin: 0;
+header h2 {
+  line-height: 1.2;
+  font-size: 2rem;
 }
 header p {
-  margin: 2rem auto 0;
+  margin: 0 auto;
   line-height: 1.5rem;
 }
 .wrapper {
   max-width: 800px;
-  width: 75%;
+  width: 80%;
   margin: 0 auto;
-  padding: 60px;
+  padding: 30px;
 }
 /* projects
 ------------------------ */
+
 .projects p {
   margin-top: 0;
 }
@@ -94,11 +104,11 @@ header p {
 .projects .btn {
   background: #14213d;
   color: #e5e5e5;
-  padding: 8px 10px;
+  padding: 8px 30px;
   text-decoration: none;
   border-radius: 4px;
+  font-weight: bolder;
   display: inline-block;
-  margin-bottom: 12px;
   justify-self: flex-end;
   align-self: flex-end;
   margin-left: auto;
@@ -107,9 +117,13 @@ header p {
   background: #14213dd3;
 }
 
-.project-head {
+.project-head,
+.project-head div {
   display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
+
 .project-item {
   /* content: "";
   display: table;
@@ -124,8 +138,7 @@ header p {
 }
 .project-item h3 {
   font-size: medium;
-  margin-top: 0;
-  margin-bottom: 3px;
+  margin: 0;
 }
 
 .project-item:last-child {
@@ -189,9 +202,23 @@ footer a {
   footer {
     text-align: center;
   }
+  header {
+    padding: 4rem 0;
+  }
+  header p {
+    width: 60%;
+  }
   footer ul {
     display: flex;
     justify-content: center;
+  }
+  header h1 {
+    font-size: 4rem;
+    line-height: 0.5;
+  }
+  header h2 {
+    font-size: 2;
+    line-height: 1;
   }
 }
 @media screen and (max-width: 930px) {
@@ -209,11 +236,18 @@ footer a {
   .project-head .btn {
     align-self: flex-end;
     justify-self: flex-end;
-    margin-left: auto;
   }
-
-  .btn {
-    margin: 10px;
+  .wrapper {
+    width: 100%;
+  }
+  .project-item p,
+  .project-item li,
+  .project-item h4 {
+    font-size: 0.8rem;
+  }
+  .courses li {
+    font-size: 0.9rem;
+    padding: 0.4rem 0;
   }
 }
 @media screen and (max-width: 749px) {
@@ -223,21 +257,31 @@ footer a {
   h2 {
     font-size: 2em;
   }
+  header {
+    background-color: #14213d;
+    color: #e5e5e5;
+    margin: 0;
+    padding: 2rem 3rem;
+  }
+  header h1 {
+    line-height: 0.9;
+  }
+  header h2 {
+    margin-top: 1rem;
+  }
 }
 @media screen and (max-width: 600px) {
   .btn {
-    font-size: 0.6em;
+    font-size: 0.7rem;
   }
 }
 @media screen and (max-width: 380px) {
   .projects img {
-    width: 200px;
-  }
-  .wrapper {
-    max-width: 300px;
     width: 100%;
   }
-
+  .btn {
+    font-size: 0.7rem;
+  }
   footer ul a {
     padding: 0;
     font-size: 0.8em;
