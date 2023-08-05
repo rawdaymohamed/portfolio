@@ -140,7 +140,9 @@ header p {
   font-size: medium;
   margin: 0;
 }
-
+.project-item h4 {
+  margin-bottom: 0.8rem;
+}
 .project-item:last-child {
   border-bottom: none;
 }
@@ -226,7 +228,7 @@ footer a {
     display: block;
   }
   .project-item img {
-    width: 100%;
+    width: 90%;
     margin-bottom: 16px;
   }
 
@@ -246,7 +248,7 @@ footer a {
     font-size: 0.8rem;
   }
   .courses li {
-    font-size: 0.9rem;
+    font-size: 0.96rem;
     padding: 0.4rem 0;
   }
 }
