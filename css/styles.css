@@ -117,11 +117,30 @@ header {
 /* Education
 ------------------------------------*/
 .education {
-  background-color: #e5e5e5;;
-  padding-bottom: 50px;
+  /* background-color: #e5e5e5;;
+  padding-bottom: 50px; */
+
+  background-image: url(../images/joanna-kosinska-unsplash.jpg);
+  background-size: cover;
+  background-position: top right;
+  padding-bottom: 100px;
 }
 .education p {
   width: 60%;
+}
+/* courses
+------------------------ */
+.courses {
+  background-color: #FFE66D;
+  color: #000;
+}
+.courses a {
+  color: black;
+  font-weight: 800;
+  margin-left: 5px;
+}
+.courses a:hover {
+  text-decoration: none;
 }
 
 
@@ -138,20 +157,6 @@ footer {
 .contact-list a {
   padding: 15px;
   display: inline-block;
-}
-/* courses
------------------------- */
-.courses {
-  background-color: #fca311;
-  color: #000;
-}
-.courses a {
-  color: black;
-  font-weight: 800;
-  margin-left: 5px;
-}
-.courses a:hover {
-  text-decoration: none;
 }
 
 /* Responsive
